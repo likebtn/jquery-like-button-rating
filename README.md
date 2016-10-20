@@ -4,7 +4,7 @@ Sexy jQuery Like Button Rating Plugin
 ![jQuery Like Button Rating Plugin](https://likebtn.com/i/jquery-like-button-rating-plugin.png)
 
 ## Live Demo
-<a href="https://likebtn.com/en/jquery-like-button" title="jQuery Like Button Rating Plugin">https://likebtn.com/en/jquery-like-button</a>
+<a href="https://likebtn.com/en/jquery-like-button-rating" title="jQuery Like Button Rating Plugin">https://likebtn.com/en/jquery-like-button-rating</a>
 
 ## Code Generator
 
