@@ -12,5 +12,5 @@ Sexy jQuery Like Button Rating Plugin
 
 Coming soon...
 
-
-<small>Powered by <a href="https://likebtn.com" title="Like Button Rating for Website">LikeBtn.com</a></small>
+<br/>
+*Powered with ♥ by <a href="https://likebtn.com" title="Like Button Rating for Website">LikeBtn.com</a>*
