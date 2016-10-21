@@ -6,10 +6,6 @@
 * https://likebtn.com/en/jquery-like-button-rating
 */
 (function($) {
- 
-    $.fn.likebtn.defaults = {
-
-	};
 
     $.fn.likebtn = function(options) {
  
@@ -24,24 +20,24 @@
 			a.src = '//w.likebtn.com/js/w/widget.js';
 			m.parentNode.insertBefore(a, m);
 		} else {
-			processButtons(this);
+			processButtons(this, settings);
 		}
 
         return this;
     };
 
-    function processButtons(obj) {
+    function processButtons(obj, settings) {
     	if (typeof(LikeBtn) == "undefined") {
     		return;
     	}
 
 		obj.each(function() {
         	var el = $(this);
-        	if (obj.settings.identifier == '' && el.attr('data-identifier') == '') {
+        	if (settings.identifier == '' && el.attr('data-identifier') == '') {
         		log('data-identifier for the the following element not set, using page URL as Like button name: ', el);
         	}
         	// Apply settings to element
-        	LikeBtn.apply(el[0], obj.settings, ['identifier', 'site_id']);
+        	LikeBtn.apply(el[0], settings, ['identifier', 'site_id']);
         });
     }
 	function log(msg, object) {
@@ -50,6 +46,10 @@
             window.console && window.console.log(object);
         }
     }
+
+    $.fn.likebtn.defaults = {
+
+    };
  
 }( jQuery ));
 
