@@ -8,11 +8,11 @@ Sexy jQuery Like Button Rating Plugin
 
 ## How To Use 
 
-Like button can be attached to any HTML element. See <a href="https://jsfiddle.net/likebtn/5nyecdhg/3/">JSFiddle</a>
+Like button can be attached to any HTML element. See <a href="https://jsfiddle.net/likebtn/5nyecdhg/4/">JSFiddle</a>
 
 	<div data-identifier="item_1" class="like-button">Like button with identifier set using data-parameter</div>
 	<div data-identifier="item_2" class="like-button">One more</div>
-	<span id="like-button-x">For this Like button identifier is set via options</span>
+	<span id="like-button-x">For this Like button the identifier is set via options</span>
 	<i id="like-button-y">For this Like button the page URL is used as identifier</i>
 
 	$(document).ready(function($) {
@@ -30,21 +30,21 @@ Like button can be attached to any HTML element. See <a href="https://jsfiddle.n
 
 Each button should have a unique **identifier** parameter (it can be understood as a button's name) to which votes are being connected. Identifier can be set:
 
-1. Using *data-identifier="unique_button_name"* parameter set for element
+1) By settings *data-identifier="unique_button_name"* parameter for the element
 ```
     <div data-identifier="unique_button_name" class="like-button">Like button with identifier set using data-parameter</div>
 
 	$(".like-button").likebtn();
 ```
-2. **Identifier** can be set via "identifier" parameter passed to likebtn() function:
+2) **Identifier** can be set via "identifier" parameter passed to likebtn() function:
 ```
-	<span id="like-button-x">For this Like button identifier is set via options</span>
+	<span id="like-button-x">For this Like button the identifier is set via options</span>
 
     $("#like-button-x").likebtn({
     	identifier: "my_button"
     });
 ```
-3. If **identifier** is not set for the Like button the page's URL is used as an identifier to which votes are being connected:
+3) If **identifier** is not set for the Like button the page's URL is used as an identifier to which votes are being connected:
 ```
     <i id="like-button-y">For this Like button the page URL is used as identifier</i>
 
@@ -54,7 +54,7 @@ Each button should have a unique **identifier** parameter (it can be understood 
 ```
 ## Settings
 
-See <a href="https://likebtn.com/en/settings" target="_blank">LikeBtn Settings</a> and <a href="https://likebtn.com/en/like-button-generator" target="_blank">Code Generator</a>
+For the full list of available options see <a href="https://likebtn.com/en/settings" target="_blank">LikeBtn Settings</a> and <a href="https://likebtn.com/en/like-button-generator" target="_blank">Code Generator</a>
 
 	$("#like-button-x").likebtn({
     		identifier: "my_button",
